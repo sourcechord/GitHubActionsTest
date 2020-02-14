@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFSample", "WPFSample\WPFSample.csproj", "{35A2D0F1-2025-4106-BDFF-D94D6510AEAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFLibSample", "WPFLibSample\WPFLibSample.csproj", "{81B309BA-B183-43A8-AB81-CF69B16AE8C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{1640FA87-0E4E-41D0-AFFF-EB5FFF5C3297}"
+	ProjectSection(SolutionItems) = preProject
+		Nuget\pack.bat = Nuget\pack.bat
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{35A2D0F1-2025-4106-BDFF-D94D6510AEAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35A2D0F1-2025-4106-BDFF-D94D6510AEAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35A2D0F1-2025-4106-BDFF-D94D6510AEAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B309BA-B183-43A8-AB81-CF69B16AE8C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B309BA-B183-43A8-AB81-CF69B16AE8C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B309BA-B183-43A8-AB81-CF69B16AE8C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B309BA-B183-43A8-AB81-CF69B16AE8C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
