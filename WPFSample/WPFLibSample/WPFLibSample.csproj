@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFrameworks>net45;netcoreapp3.0</TargetFrameworks>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
     <PackageId>SourceChord.WPFLibSample</PackageId>
     <Company>SourceChord</Company>
