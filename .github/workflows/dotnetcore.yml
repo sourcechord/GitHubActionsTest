@@ -13,8 +13,6 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.100
-    - uses: nuget/setup-nuget@v1
-    - run: nuget restore ./WPFSample/WPFSample.sln
     - name: Build with dotnet
       run: dotnet build --configuration Release
       working-directory: ./WPFSample/WPFLibSample
