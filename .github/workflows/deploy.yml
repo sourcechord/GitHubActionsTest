@@ -1,0 +1,21 @@
+name: .NET Core
+
+on:
+  create:
+    tags:
+      - "*"
+jobs:
+  release:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.100
+    - name: Build Nuget package
+      run: dotnet pack -c Release -o $Env:GITHUB_WORKSPACE/WPFSample/Nuget
+      working-directory: ./WPFSample/WPFLibSample
+    - name: Deploy Nuget package
+      run: dotnet nuget push .\WPFSample\Nuget\*.nupkg -Source https://api.nuget.org/v3/index.json
