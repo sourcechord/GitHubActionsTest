@@ -18,6 +18,6 @@ jobs:
       run: dotnet pack -c Release -o $Env:GITHUB_WORKSPACE/WPFSample/Nuget
       working-directory: ./WPFSample/WPFLibSample
     - name: Deploy Nuget package
-      run: dotnet nuget push .\WPFSample\Nuget\*.nupkg -s https://api.nuget.org/v3/index.json -k $NUGET_API_KEY
+      run: dotnet nuget push .\WPFSample\Nuget\*.nupkg -s https://api.nuget.org/v3/index.json -k $env:NUGET_API_KEY
       env:
         NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
