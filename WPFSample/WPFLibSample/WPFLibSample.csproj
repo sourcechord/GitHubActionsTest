@@ -5,6 +5,7 @@
     <UseWPF>true</UseWPF>
     <PackageId>SourceChord.WPFLibSample</PackageId>
     <Company>SourceChord</Company>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>
